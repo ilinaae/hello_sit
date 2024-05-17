@@ -7,7 +7,10 @@ int fib(int n) {
 }
 int main() {
     int n; cout << "n = ";  cin >> n;
-    int a = fib(n - 1);
-    cout << "fib = " << a << endl;
+    int i = 0;
+    while (i < n) {
+        cout << fib(i) << " ";
+        i++;
+    }
     return 0;
 }
